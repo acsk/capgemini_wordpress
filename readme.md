@@ -1,6 +1,15 @@
-DADOS DE ACESSO:
+# Portal Wordpress
+
+## Acesso
+```
 usuário: admin
 senha: 12345678
+```
 
-BANCO DE DADOS:
+### Banco de dados
+```
 Arquivo "wpcapgemini.sql" do banco se encontra na raiz do projeto.
+```
+
+
+
