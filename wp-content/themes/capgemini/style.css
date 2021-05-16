@@ -1,0 +1,161 @@
+:root {
+    --primary: rgb(30, 73, 190);
+    --second: rgb(30, 30, 46);
+    --text: rgb(97, 97, 119);
+    ;
+}
+
+p {
+    color: var(--text);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--primary);
+    font-weight: bolder;
+    letter-spacing: -1px;
+}
+
+h2 {
+    color: var(--second);
+    font-weight: 200;
+    letter-spacing: -1px;
+    margin: 15px 0;
+}
+
+a {
+    color: var(--second);
+    font-weight: bold;
+}
+
+header {
+    height: 65px;
+    background-color: var(--primary);
+    padding: 5px 0;
+}
+
+header>nav>ul {
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+header>nav>ul>li {
+    display: inline;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 35px;
+    float: left;
+}
+
+header>nav>ul>li>a {
+    text-decoration: none;
+    color: #fff
+}
+
+header>nav>ul>li>a:hover {
+    color: var(--second);
+}
+
+.navbar-menu-item-brand {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: burlywood
+}
+
+.single-title {
+    margin-top: 2rem;
+}
+
+.btn-custom {
+    background-color: var(--second);
+    color: #fff;
+    border: var(--primary)
+}
+
+.btn-custom:hover {
+    background-color: var(--primary);
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 999999;
+}
+
+.destaque {
+    overflow: hidden;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+/* the slides */
+
+.slick-slide {
+    margin-left: 27px;
+    height: 500px;
+}
+
+
+/*PAGINANTION*/
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    background-color: var(--primary);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 12px;
+    padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+    background-color: var(--primary);
+}
+
+
+/*PAGINANTION*/
+
+
+/* the parent */
+
+.slick-list {
+    margin-left: -27px;
+}
+
+@media (max-width: 792px) {
+    .destaque {
+        height: 250px;
+        width: 100%;
+    }
+}
